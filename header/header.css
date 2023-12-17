@@ -1,0 +1,131 @@
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+header {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 0.5em 0; /* Adjust the padding for a smaller header */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fffafa;
+    text-decoration: none;
+    
+    margin: 0 0.5em;
+}
+
+/* Add this rule to prevent background color change on logo hover */
+.logo a:hover {
+    background-color: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 40px; /* Adjust the height of the logo */
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-left: 10px;
+    width: 125px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 0.5em;
+}
+
+section {
+    padding: 2em;
+    margin-top: 80px; /* Adjust the margin based on the header height */
+}
+.dropdown {
+    display: inline-block;
+    }
+    
+    .dropbtn {
+        color: #000000;
+        text-decoration: none;
+        padding: 1em;
+        margin: 0 0.5em;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: inherit; /* Add this line to inherit font size */
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+    
+    .dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    
+    .dropdown-content a:hover {
+    background-color: #ddd; /* Adjust the color as needed */
+    }
+    
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+    background-color: #ddd; /* Adjust the color as needed */
+    }
+    header a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: #ddd; /* Adjust the color as needed */
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd; /* Adjust the color as needed */
+    }
+    /* Add this style for the arrow */
+    .dropdown .dropbtn::after {
+        content: '\25BC'; /* Unicode character for a down arrow */
+        margin-left: 5px; /* Adjust the margin as needed */
+        transform: rotate(0deg); /* Set initial rotation */
+        transition: transform 0.3s; /* Add a transition for a smoother effect */
+    }
+    
+    /* Rotate the arrow when the button is hovered */
+    .dropdown:hover .dropbtn::after {
+        transform: rotate(180deg); /* Rotate the arrow */
+    }
+
+/* ... (rest of your CSS) */
+

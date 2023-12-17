@@ -1,0 +1,162 @@
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    
+}
+
+
+
+.jumbotron {
+text-align: center;
+background: url('../images/jumbotron\ background.jpg') center/cover no-repeat; /* Replace with the path to your image */
+background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+color: #fff;
+padding: 5em;
+
+padding-top: 6em;
+margin-bottom: 2em;
+}
+
+.jumbotron h1 {
+font-size: 2.5em;
+margin-bottom: 0.5em;
+}
+
+.jumbotron p {
+font-size: 1.2em;
+margin-bottom: 1.5em;
+}
+
+.jumbotron button {
+background-color: #fff;
+color: #333;
+padding: 1em 2em;
+font-size: 1.2em;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.jumbotron button:hover {
+background-color: #ddd; /* Adjust the color as needed */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#products {
+    text-align: left;
+    padding: 20px; /* Add padding for better spacing */
+
+}
+#products h2 {
+    margin-left: 180px;
+}
+
+/* Update styles for the .product-container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px; /* Set a maximum width for the product container */
+    margin: 0 auto; /* Center the product container */
+}
+.container {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.product-block {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 0.5em;
+    background-color: #fff;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 300px; /* Set a fixed width or adjust as needed */
+    box-sizing: border-box;
+     /* Set the width for three blocks with some spacing */
+    
+}
+.product-block:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    max-width: 100%;
+    height: 80%;
+    display: block;
+    
+}
+
+
+/* New styles for Product Categories section */
+#horizontal-section {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    overflow-x: auto;
+    padding: 20px 0;
+    text-align: center;
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto;
+    max-width: 800px; /* Set a maximum width for the section */
+}
+
+#horizontal-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 20px; /* Add some spacing between blocks */
+}
+
+.block {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 230px;
+    max-height: 200px;
+    width: 100%; /* Ensure blocks take up the full available width */
+}
+
+.block img {
+    width: 230px;
+    height: 200px; /* Ensure all images have the same height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.block-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.block:hover img {
+    opacity: 0.7;
+}
+
+.block:hover .block-title {
+    opacity: 1;
+}
+
+.blocks-title {
+    margin-bottom: 25px;
+    margin-left: 31px;
+    margin-right: 50px;
+    font-size: 40px;
+}

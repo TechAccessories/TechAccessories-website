@@ -1,0 +1,150 @@
+/* Your existing CSS styles for the post page */
+
+.post-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 20px; /* Adjust the margin based on the header height */
+    margin-bottom: 300px;
+}
+
+.post-page {
+    flex-grow: 2;
+    box-sizing: border-box;
+    max-width: 900px; /* Set the maximum width for the post content */
+    margin: 0 auto; /* Center the post content horizontally */
+    
+
+}
+
+
+
+.post-header {
+    text-align: left; /* Align the post header to the left */
+    margin-bottom: 20px;
+}
+
+.post-title {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.post-image {
+    width: 100%; /* Set the maximum width for the post image */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+    
+}
+
+.post-content {
+    line-height: 1.6;
+    max-width: 80%; /* Set the maximum width for the post content */
+    margin-right: 0; /* Remove the margin on the right side */
+}
+.brand-name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-name h2 {
+    /* Add explicit styles for the h2 tag if needed */
+}
+.product {
+    margin-bottom: 40px;
+    margin-top: 80px;
+    
+}
+
+.external-link-button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    margin-bottom: 20px;
+}
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.button-container p {
+    margin: 0; /* Remove default margin for the paragraph element */
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table td {
+    font-weight: bold; /* Make text bold */
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+
+
+/* Your existing CSS styles for the post page */
+
+.sidebar-block {
+    margin-bottom: 20px;
+}
+
+/* New styles for the related posts */
+.related-posts {
+    display: flex;
+    flex-wrap: wrap; /* Allow the related posts to wrap to the next line */
+}
+
+.related-post {
+    width: 150px; /* Two related posts per row with some spacing */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px; /* Add some spacing between related posts */
+    
+}
+
+.related-post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.related-post-title {
+    font-size: 1em;
+    margin: 0;
+    color: rgb(0, 68, 255); /* Set the initial color of the title */
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer;
+    transition: color 0.3s, text-decoration 0.3s; /* Add transitions for a smoother effect */
+}
+
+/* Hover effect for the related post title */
+.related-post-title:hover {
+    color: #007bff; /* Change the color on hover */
+    text-decoration: underline; /* Underline the title on hover */
+}
+
+/* Move the sidebar to the left */
+.sidebar {
+    order: -1;
+}
+
+/* Add any additional styles as needed */
+
