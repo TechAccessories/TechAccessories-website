@@ -1,0 +1,47 @@
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    
+}
+.sitemap {
+    margin-top: 120px;
+    margin-left: 300px;
+    
+}
+.sitemap-title{
+    line-height: .9;
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+.category{
+    margin-bottom: 50px;
+}
+.category h1 {
+    font-weight: 800;
+
+}
+.line {
+    color: rgb(196, 196, 196);
+    margin-bottom: 30px;
+    display: block;
+}
+.link {
+    color: rgb(0, 68, 255);
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s; /* Add transitions for a smoother effect */
+    display: block; /* Make it a block-level element */
+    width: 100%; /* Take up the full width */
+    margin-bottom: 10px;
+}
+.link:hover {
+    color: #007bff; /* Change the color on hover */
+    text-decoration: underline; /* Underline the title on hover */
+}
