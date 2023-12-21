@@ -4,7 +4,7 @@ body, h1, h2, h3, p, ul, ol {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'EB Garamond', serif;
     background-color: #f4f4f4;
     margin: 0;
     
@@ -13,34 +13,39 @@ body {
 
 
 .jumbotron {
-text-align: center;
-background: url('../images/jumbotron\ background.jpg') center/cover no-repeat; /* Replace with the path to your image */
+text-align: left;
+background: url('../images/jumbotron-bg.png') center/cover no-repeat; /* Replace with the path to your image */
 background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
 color: #fff;
 padding: 5em;
 
 padding-top: 6em;
 margin-bottom: 2em;
+height: 500px;
 }
 
 .jumbotron h1 {
-font-size: 2.5em;
+font-size: 4em;
 margin-bottom: 0.5em;
 }
 
 .jumbotron p {
-font-size: 1.2em;
+font-size: 1.7em;
 margin-bottom: 1.5em;
+max-width: 500px;
 }
 
 .jumbotron button {
-background-color: #fff;
+background-color: #f0ecec;
 color: #333;
+border-radius: 10px;
 padding: 1em 2em;
 font-size: 1.2em;
 border: none;
 cursor: pointer;
 transition: background-color 0.3s;
+margin-top: 60px;
+
 }
 
 .jumbotron button:hover {
