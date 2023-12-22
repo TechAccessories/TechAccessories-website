@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 header {
-    background-color: #ffffff;
+    background: #3a86f7;
     color: #000000;
     text-align: center;
     padding: 0.5em 0; /* Adjust the padding for a smaller header */
@@ -19,7 +19,9 @@ header {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    font-style: arial;
     align-items: center;
+    height: 80px;
 }
 
 header a {
