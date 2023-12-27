@@ -1,5 +1,10 @@
 /* Your existing CSS styles for the post page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
 
+}
 .post-section {
     display: flex;
     justify-content: space-between;
@@ -101,50 +106,61 @@
 
 /* Your existing CSS styles for the post page */
 
-.sidebar-block {
-    margin-bottom: 20px;
+.more-posts {
+    margin-top: 50px; /* Adjust as needed */
 }
 
-/* New styles for the related posts */
-.related-posts {
-    display: flex;
-    flex-wrap: wrap; /* Allow the related posts to wrap to the next line */
-}
-
-.related-post {
-    width: 150px; /* Two related posts per row with some spacing */
-    box-sizing: border-box;
-    padding: 10px;
+.more-posts h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
     text-align: center;
-    margin-bottom: 15px; /* Add some spacing between related posts */
-    
+    margin-top: -50px;
 }
 
-.related-post img {
-    max-width: 100%;
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add some space between posts */
+}
+
+.post {
+    width: calc(33.3333% - 90px); /* Calculate the width with space between posts */
+    margin: 0 10px; /* Adjust margin to create space on left and right */
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.post img {
+    width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    object-fit: cover;
+    box-shadow: 7px 7px 10px rgba(122, 121, 121, 0.3);
 }
 
-.related-post-title {
-    font-size: 1em;
-    margin: 0;
-    color: rgb(0, 68, 255); /* Set the initial color of the title */
-    text-decoration: none; /* Remove default underline */
-    cursor: pointer;
-    transition: color 0.3s, text-decoration 0.3s; /* Add transitions for a smoother effect */
+.post h3 {
+    margin-top: 10px;
+    font-size: 16px; /* Adjust font size for smaller posts */
+    text-align: center;
 }
 
-/* Hover effect for the related post title */
-.related-post-title:hover {
-    color: #007bff; /* Change the color on hover */
-    text-decoration: underline; /* Underline the title on hover */
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .post {
+        width: calc(50% - 20px); /* Two posts per row on smaller screens */
+    }
 }
 
-/* Move the sidebar to the left */
-.sidebar {
-    order: -1;
+@media (max-width: 480px) {
+    .post {
+        width: calc(100% - 20px); /* One post per row on even smaller screens */
+    }
+
+    .more-posts h2 {
+        font-size: 24px;
+    }
+
+    .post h3 {
+        font-size: 14px; /* Adjust font size for even smaller screens */
+    }
 }
-
-/* Add any additional styles as needed */
-

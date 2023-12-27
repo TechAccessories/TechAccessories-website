@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="header/header.css">
+    
     <link rel="stylesheet" href="footer/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-    <script src="js/header.js" defer></script>
+    
     
     <title>
         Tech Accessories
@@ -27,7 +27,7 @@
 <body>
 
     <!-- Include the header using JavaScript -->
-    
+    <script src="js/header.js" defer></script>
 
     <!-- Jumbotron Section -->
     <section class="jumbotron">
@@ -36,168 +36,157 @@
         <p>We write informational and educational blogs for technology related topics.</p>
         <button onclick="scrollToProducts()">Explore Blogs</button>
     </section>
-    <section id="horizontal-section">
-        <h2 class="blocks-title">Categories</h2>
+
     
-        <!-- Horizontal Block Section -->
-        <div id="horizontal-block">
-            <!-- Block 1 -->
-            <a href="pages/keyboards-category.html" class="block-link">
-                <div class="block">
-                    <img src="images/keyboards/Razer-BlackWidow-V4-Pro-3-keyboard-gaming.jpg" alt="Block 1">
-                    <div class="block-title">Keyboards</div>
-                </div>
-            </a>
-    
-            <!-- Block 2 -->
-            <a href="pages/mice-category.html" class="block-link">
-                <div class="block">
-                    <img src="images/mice/good-looking-mouse.jpg" alt="Block 2">
-                    <div class="block-title">Mice</div>
-                </div>
-            </a>
-    
-            
-    
-            <!-- Block 5 -->
-            <a href="pages/laptops-category.html" class="block-link">
-                <div class="block">
-                    <img src="images/laptops/pexels-life-of-pix-7974.jpg" alt="Block 5">
-                    <div class="block-title">Laptops</div>
-                </div>
-            </a>
-    
-            <!-- Add more blocks as needed -->
+    <h2 style="text-align: center; margin-top: 50px;  font-size: 50px;">Blogs</h2>
+    <!-- New Section -->
+    <section id="new-section" class="container">
+        <!-- First Column -->
+        <div class="column">
+            <div class="left-column">
+                <a href="pages/what-is-a-chrome-book.html">
+                    <img src="images/laptops/chrome-book-image-ai.jpg" alt="Image Description">
+                    <h2>Chrombooks : Laptops Powered by Chrome OS</h2>
+                </a>
+                <p>Discover the features and functionality of chromebooks</p>
+            </div>
+        </div>
+
+        <!-- Second Column -->
+        <div class="column">
+            <!-- First Row -->
+            <div class="row" >
+                <a href="pages/what-is-an-optical-mouse.html">
+                    <div class="text-content">
+                        
+                        <div class="small-image" >
+                            <img src="images/mice/optical-mouse-photo-light.jpg" alt="Small Image 1">
+                        </div>
+                        <div class="title-and-description">
+                            <h3>What is an optical mouse?</h3>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+        
+            <!-- Second Row -->
+            <div class="row">
+                <a href="pages/what-is-an-ultra-book.html">
+                    <div class="text-content">
+                        
+                        <div class="small-image">
+                            <img src="images/laptops/ultrabook-image-generated.jpg" alt="Small Image 1">
+                        </div>
+                        <div class="title-and-description">
+                            <h3>Ultrabook Laptop : Features and Advantages</h3>
+                            
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+        
+        
+            <!-- Third Row -->
+            <div class="row">
+                <a href="pages/what-is-a-gaming-keyboard.html">
+                    <div class="text-content">
+                        
+                        <div class="small-image">
+                            <img src="images/keyboards/KL610_gaming_keyboard.jpg" alt="Small Image 1">
+                        </div>
+                        <div class="title-and-description">
+                            <h3>Gaming Keyboards: Features and Advantages</h3>
+                            
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+        
         </div>
     </section>
-    
-    <h2 style="text-align: center; margin-top: 50px; margin-bottom: -50px; font-size: 50px;">Blogs
 
-    </h2>
-    <!-- Products and Additional Blocks Section -->
-    <section id="products">
-        <h2>Keyboards
-        </h2>
 
-        <div class="container">
-            <!-- Product Container -->
-            <div class="product-container">
-                <!-- Product Block 1 -->
-                <div class="product-block" onclick="location.href='pages/what-are-ergonomic-keyboards.html';">
-                    
-                    <img src="images/keyboards/Logitech-Wave-Keys-6-scaled-ergonomic-keyboard.jpg" alt="" class="product-image">
-                    <h3>What are ergonomic keyboards?</h3>
-                </div>
 
-                <!-- Product Block 2 -->
+    <section id="another-section" class="custom-section">
+        <!-- First Column -->
+        <div class="custom-column">
+            <!-- First Row -->
+            <div class="custom-row">
+                <h2 style="font-size: 35px; color: orangered;"></h2>
                 
-                <div class="product-block" onclick="location.href='pages/what-is-a-gaming-keyboard.html';">
-                    
-                    <img src="images/keyboards/Razer-BlackWidow-V4-Pro-3-keyboard-gaming.jpg" alt="Razer-BlackWidow-V4-Pro-3 keyboard gaming" class="product-image">
-                    <h3>What is a gaming keyboard?</h3>
-                </div>
-                <div class="product-block" onclick="location.href='pages/what-is-a-mechanical-keyboard.html';">
-                    
-                    <img src="images/keyboards/GXT-834-Callaz-mechanical-keyboard.jpg" alt="GXT 834 Callaz mechanical keyboard" class="product-image">
-                    <h3>What is a mechanical keyboard?</h3>
-                </div>
-                <div class="product-block" onclick="location.href='pages/5-tips-for-choosing-the-right-keyboard.html';">
-                    
-                    <img src="images/keyboards/Apple_Keyboards_2nd_3rd_Gen_above.png" alt="Keyboards" class="product-image">
-                    <h3>5 Tips for Choosing the Right Keyboard for Your needs</h3>
-                </div>
-                <div class="product-block" onclick="location.href='pages/7-ways-to-improve-your-typing-speed-and-accuracy-on-a-keyboard.html';">
-                    
-                    <img src="images/keyboards/keyboard-typing_PJLZHLI1XL.jpg" alt="Keyboard typing style" class="product-image">
-                    <h3>7 Ways to Improve Your Typing Speed and Accuracy on a Keyboard</h3>
-                </div>
-                
-
-                <!-- Add more product blocks as needed -->
             </div>
-            
-            
-
-            
+            <!-- Second Row -->
+            <div class="custom-row background-row">
+                <!-- Clickable Columns -->
+                <a href="pages/what-is-a-trackball-mouse.html" class="custom-clickable-column">
+                    <!-- Left Column - Image -->
+                    <div class="custom-image-row">
+                        <img src="images/mice/mouse (1).jpg" alt="Image 1">
+                    </div>
+                    <!-- Right Column - Title -->
+                    <div class="custom-title-row">
+                        <h3>Trackball Mouse: Precision and Advantages. </h3>
+                    </div>
+                </a>
+                <a href="pages/what-is-an-ergonomic-mouse.html" class="custom-clickable-column">
+                    <!-- Left Column - Image -->
+                    <div class="custom-image-row">
+                        <img src="images/mice/ergonomic-mouse-image.jpg" alt="Image 1">
+                    </div>
+                    <!-- Right Column - Title -->
+                    <div class="custom-title-row">
+                        <h3>What is an ergonomic Mouse?</h3>
+                    </div>
+                </a>
+                
+                
+                <!-- Repeat similar structure for other columns -->
+            </div>
         </div>
 
-        <h2>Mice</h2>
-
-        <div class="container">
-            <!-- Product Container -->
-            <div class="product-container">
-                <!-- Product Block 1 -->
-             
-                <div class="product-block" onclick="location.href='pages/what-is-a-trackball-mouse.html';">
-                    
-                    <img src="images/mice/Elecom-Mxt1URBK-trackball-mouse.jpg" alt="Elecom, Mxt1URBK trackball mouse" class="product-image">
-                    <h3>What is a Trackball mouse?</h3>
+        <!-- Second Column -->
+        <div class="custom-modified-column">
+            <h2 style="font-size: 35px; color: orangered;"></h2>
+            <!-- Modified Structure with Rows and Blocks -->
+            <div class="custom-modified-rows-container">
+                <!-- First Row -->
+                <div class="custom-modified-row">
+                    <a href="pages/what-is-a-mechanical-keyboard.html">
+                        <div class="custom-modified-column-with-margin">
+                            <img src="images/keyboards/2018_Bay_Area_Mechanical_Keyboard_Meetup_(45946731021).jpg" alt="Image 2-1">
+                            
+                                <h3>Mechanical Keyboard : Construction, Switches, and Advantages</h3>
+                            
+                        </div>
+                    </a>
+                    <a href="pages/7-ways-to-improve-your-typing-speed-and-accuracy-on-a-keyboard.html" class="custom-modified-column-with-margin-a">
+                        <div class="custom-modified-column-with-margin">
+                            <img src="images/keyboards/keyboard-typing_PJLZHLI1XL.jpg" alt="Image 2-1">
+                            
+                                <h3>7 Tips to Improve Your Typing Speed and Accuracy on a Keyboard</h3>
+                            
+                        </div>
+                    </a>
                 </div>
-
-                <div class="product-block" onclick="location.href='pages/what-is-an-ergonomic-mouse.html';">
-                    
-                    <img src="images/mice/Logitech-MX-Master-2S-2-ergonomic-mouse.jpg" alt="" class="product-image">
-                    <h3>What is an ergonomic mouse?</h3>
-                </div>
-
-                <div class="product-block" onclick="location.href='pages/what-is-an-optical-mouse.html';">
-                    
-                    <img src="images/mice/Microsoft_Optical_Mouse_100_1484.jpg" alt="" class="product-image">
-                    <h3>What is an optical mouse?</h3>
-                </div>
-
-                <div class="product-block" onclick="location.href='pages/6-techniques-for-customizing-mouse-buttons.html';">
-                    
-                    <img src="images/mice/Raton_optico_Logitech_-_Logitech_optical_mouse_-_01.jpg" alt="" class="product-image">
-                    <h3>6 Techniques for Customizing Mouse Buttons</h3>
-                </div>
-
-                <div class="product-block" onclick="location.href='pages/7-tips-to-choose-the-right-gaming-mouse.html';">
-                    
-                    <img src="images/mice/Razer_DeathAdder_Elite-front_oblique-ar_16to10-fs_PNr°0465-gaming-mouse.jpg" alt="" class="product-image">
-                    <h3>7 Tips for Choosing the Right Gaming Mouse to Improve Your Gaming Experience.</h3>
-                </div>
-
-                <!-- Add more product blocks as needed -->
-            </div>
-            
-        </div>
-
-        <h2>Laptops</h2>
-
-        <div class="container">
-            <!-- Product Container -->
-            <div class="product-container">
-                <!-- Product Block 1 -->
+                <!-- Add more rows as needed -->
                 
-
-                <!-- Product Block 2 -->
-                <div  class="product-block" onclick="location.href='pages/what-is-a-chrome-book.html';">
-                    <img src="images/laptops/chromebokk.jpg" alt="" class="product-image">
-                    <h3>What is a chromebook</h3>
-                </div>
-                <div class="product-block" onclick="location.href='pages/what-is-an-ultra-book.html';">
-                    <img src="images/laptops/Lenovo_ThinkPad_X1_Carbon_Ultrabook.jpg" alt="" class="product-image">
-                    <h3>What is an Ultrabook?</h3>
-                </div>
-                <div class="product-block" onclick="location.href='pages/7-tips-for-choosing-the-right-ultrabook-for-your-portable-computing-needs.html';">
-                    <img class="product-image" src="images/laptops/pexels-life-of-pix-7974.jpg" alt="Laptop">
-                    <h3>7 Tips for Choosing the Right Ultrabook for your needs</h3>
-                </div>
-                
-
-                <!-- Add more product blocks as needed -->
+                <!-- Add more rows as needed -->
             </div>
-            
         </div>
-
     </section>
+
+
 
     
     <script>
         
         function scrollToProducts() {
-            document.querySelector("#products").scrollIntoView({ behavior: "smooth" });
+            document.querySelector("#new-section").scrollIntoView({ behavior: "smooth" });
         }
 
         function goToHomePage() {

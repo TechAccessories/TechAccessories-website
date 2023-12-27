@@ -6,7 +6,7 @@ body {
     font-family: 'EB Garamond', serif;
     background-color: #f4f4f4;
     margin: 0;
-    
+
 }
 
 
@@ -18,7 +18,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency
 color: #fff;
 padding: 5em;
 
-padding-top: 6em;
+padding-top: 10em;
 margin-bottom: 2em;
 height: 500px;
 }
@@ -163,4 +163,413 @@ background-color: #ddd; /* Adjust the color as needed */
     margin-left: 31px;
     margin-right: 50px;
     font-size: 40px;
+}
+
+
+
+
+
+#new-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px; /* Adjust the margin as needed */
+    margin-top: 50px;
+}
+#new-section a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.1s ease-in-out;
+}
+#new-section a:hover {
+    text-decoration: underline;
+    color: #be4c00; /* Change the color as needed */
+}
+.column {
+    flex: 1;
+}
+
+.left-column {
+    text-align: left;
+}
+
+.left-column img {
+    max-width: 600px;
+    height: auto;
+}
+
+.left-column h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.left-column p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.row {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.text-content {
+    display: flex;
+    
+    align-items: center;
+}
+
+.small-image img {
+    width: 170px;
+    height: 170px;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.text-content h3 {
+    font-size: 1.2em;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.text-content p {
+    font-size: 1em;
+}
+.title-and-description {
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-left: 30px;
+}
+
+.title-and-description h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.title-and-description p {
+    font-size: 1em;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+
+
+/* Add these styles to your existing CSS file */
+
+/* ... (existing styles) */
+
+/* Styles for Another Section */
+.custom-section {
+    display: flex;
+    justify-content: space-between;
+    
+    height: auto;
+    
+    margin: 50px 50px 100px;
+}
+
+.custom-column {
+    flex: 1;
+}
+
+.custom-row {
+    margin-bottom: 10px;
+}
+
+.background-row {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.custom-clickable-column {
+    display: flex;
+    flex-direction: row; /* Arrange in a row */
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+    margin: 5px;
+    height: calc(50% - 10px);
+    margin-top: 20px;
+}
+
+.custom-clickable-column:hover {
+    background-color: #ddd;
+    text-decoration: underline;
+    color: #be4c00;
+}
+
+
+
+.custom-image-row img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    
+}
+
+
+.custom-title-row h3 {
+    text-decoration: none;
+    color: inherit;
+    transition: text-decoration 0.3s ease-in-out;
+    margin-left: 30px;
+}
+
+.custom-title-row h3:hover {
+    text-decoration: underline;
+    
+}
+
+.custom-modified-column{
+    max-width: 700px;
+}
+.custom-modified-rows-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-modified-row {
+    display: flex;
+    width: 100%; /* Ensure the row takes the full width */
+    margin-bottom: 10px;
+}
+
+.custom-modified-column-with-margin {
+    flex: 1;
+    box-sizing: border-box;
+    margin-right: 10px; /* Add margin between columns */
+    text-decoration: none;
+    color: black;
+    transition: text-decoration 0.3s ease-in-out, color 0.1s ease-in-out;
+    width: 250px;
+    
+}
+
+.custom-modified-column-with-margin:hover {
+    
+    color: #be4c00;
+}
+
+.custom-modified-column img {
+    max-width: 100%;
+    height: 170px;
+    
+}
+
+.custom-modified-column h2, .custom-modified-column h3 {
+    margin-bottom: 10px;
+}
+
+/* Additional Styles for Better Overall Appearance */
+
+@media (max-width: 1100px){
+    .custom-modified-row {
+        display: flex;
+       flex-direction: column;
+       
+       width: 51%;
+    }
+    .custom-modified-column {
+        justify-content: space-between;
+    }
+    .custom-modified-rows-container{
+        max-width: 500px;
+        margin: 50px 50px 100px;
+        text-align: center;
+    }
+    .custom-modified-column h2 {
+        text-align: center;
+        width: 100%;
+        margin-left: 50px;
+        margin-top: 50px;
+        
+    }
+    .custom-modified-rows-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+    #new-section {
+        display: block;
+        justify-content: space-between;
+
+        
+    }
+    .left-column {
+        text-align: center;
+    }
+    
+    .custom-row {
+        text-align: center;
+    }
+    
+}
+@media (max-width: 768px){
+    .custom-section{
+        display: block;
+    }
+    .custom-modified-row {
+        display: flex;
+       flex-direction: column;
+       
+       width: 50%;
+    }
+    .custom-modified-column {
+        justify-content: space-between;
+        
+    }
+    .custom-modified-column-with-margin{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        
+    }
+    .custom-modified-column h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 500px;
+    }
+    .custom-modified-rows-container {
+        flex-direction: column;
+        display: inline-block;
+        max-width: 768px;
+    }
+    #new-section {
+        display: block;
+        justify-content: space-between;
+
+        
+    }
+    .left-column {
+        text-align: center;
+    }
+    .left-column img {
+        max-width: 400px;
+    }
+    
+    .custom-row {
+        text-align: center;
+        
+    }
+    .custom-modified-column{
+        max-width: 600px;
+    }
+    .custom-modified-rows-container {
+        display: flex;
+        
+    }
+
+    
+}
+@media (max-width: 750px){
+    .custom-section{
+        display: block;
+    }
+    .custom-modified-row {
+        display: flex;
+       flex-direction: column;
+       
+       width: 50%;
+    }
+    .custom-modified-column {
+        justify-content: space-between;
+        
+    }
+    .custom-modified-column-with-margin{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        
+    }
+    .custom-modified-column h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 500px;
+    }
+    .custom-modified-rows-container {
+        flex-direction: column;
+        display: inline-block;
+        max-width: 600px;
+    }
+    #new-section {
+        display: block;
+        justify-content: space-between;
+
+        
+    }
+    .left-column {
+        text-align: center;
+    }
+    .left-column img {
+        max-width: 350px;
+        
+    }
+    
+    .custom-row {
+        text-align: center;
+        
+    }
+    .custom-modified-column{
+        max-width: 600px;
+    }
+    .custom-modified-rows-container {
+        display: flex;
+        
+    }
+
+    
+}
+@media (max-width: 412px){
+    .custom-section{
+        display: block;
+    }
+    .custom-modified-row {
+        display: flex;
+       flex-direction: column;
+       
+       width: 100%;
+    }
+    .custom-modified-column {
+        justify-content: space-between;
+        
+    }
+    .custom-modified-column-with-margin{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        
+    }
+    .custom-modified-column h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 200px;
+    }
+    .custom-modified-rows-container {
+        
+        flex-direction: column;
+        display: inline-block;
+        max-width: 400px;
+        display: flex;
+        margin: 25px 25px 50px;
+    }
+    #new-section {
+        display: block;
+        justify-content: space-between;
+
+        
+    }
+    .left-column {
+        text-align: center;
+    }
+    .left-column img {
+        max-width: 170px;
+        
+    }
+    
+    .custom-row {
+        text-align: center;
+        
+    }
+    .custom-modified-column{
+        max-width: 300px;
+    }
+    
+
+    
 }

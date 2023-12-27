@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--    <p style="text-align: center; color: rgb(179, 176, 176); margin-bottom: 10px;">Photo by <a href="" target="_blank"></a>, on <a href="" target="_blank"></a> </p>    -->
+
+<head>
+    <!-- Your existing head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/listicles.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    
+    <style></style>
+    <title>Post Title</title>
+</head>
+
+<body>
+    <!-- Include the header -->
+ 
+    <script src="../js/header.js" defer></script>
+    
+
+    <!-- Post Page with Sidebar -->
+    <section class="post-section">
+        <div class="sidebar">
+            <nav class="sidebar-links">
+                <ul>
+                    <li><a class="sidebar-section" href="#section1">Introduction</a></li>
+                    <li><a class="sidebar-section" href="#section2">Step 1: Create a GitHub account</a></li>
+                    <li><a class="sidebar-section" href="#section3">Step 2: Create a Repository on GitHub</a></li>
+                    <li><a class="sidebar-section" href="#section4">Step 3: Upload your files</a></li>
+                    <li><a class="sidebar-section" href="#section5">Step 4: Publish your Website through GitHub pages</a></li>
+                    <li><a class="sidebar-section" href="#section6">FAQS</a></li>
+                    <li><a class="sidebar-section" href="#section7">Conclusion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="post-page">
+            <div class="post-header">
+                <h1 class="post-title">How to connect your domain name with GitHub Pages | Tutorial</h1>
+                
+                
+            </div>
+            <div class="post-content">
+                <section id="section1">
+                    <p>
+                        
+                        
+                    </p>
+                
+                    <h3 style="margin-top: 30px;">Table of Content</h3>
+                    
+                    <nav class="section-links">
+                        <ul>
+                            <li><a class="section"  href="#section1"></a></li>
+                            <li><a class="section"  href="#section2"></a></li>
+                            <li><a class="section"  href="#section3"></a></li>
+                            <li><a class="section"  href="#section4"></a></li>
+                            <li><a class="section"  href="#section5"></a></li>
+                            <li><a class="section"  href="#section6"></a></li>
+                            
+                            <li><a class="section"  href="#section7"></a></li>
+                            
+
+                            
+                        <!-- Add more navigation links as needed -->
+                        </ul>
+                    </nav>
+                </section>
+                
+
+                <!-- Content of the first section -->
+                <section id="section2">
+                    <h2></h2>
+                    <p></p>
+                </section>
+
+                <!-- Content of the second section -->
+                <section id="section3">
+                    <h2></h2>
+                    
+                    <p></p>
+                </section>
+                
+                
+                <section id="section">
+                    <h2>Conclusion</h2>
+                    <p></p>
+                </section>
+                
+            </div>   <!-- Add more sections as needed -->
+        </div>
+
+        
+       
+    </section>
+
+
+    <section class="more-posts">
+        <h2>More Posts</h2>
+        <div class="post-container">
+            <!-- Post 1 -->
+            <div class="post">
+                <a href="post1.html">
+                    <img src="../images/" alt="Post 1">
+                    <h3>Post 1 Title</h3>
+                </a>
+            </div>
+            <div class="post">
+                <a href="post1.html">
+                    <img src="../images/" alt="Post 1">
+                    <h3>Post 1 Title</h3>
+                </a>
+            </div>
+            <div class="post">
+                <a href="post1.html">
+                    <img src="../images/" alt="Post 1">
+                    <h3>Post 1 Title</h3>
+                </a>
+            </div>
+    
+            <!-- Post 2 -->
+            <div class="post">
+                <a href="post2.html">
+                    <img src="../images/" alt="Post 2">
+                    <h3>Post 2 Title</h3>
+                </a>
+            </div>
+    
+            <!-- Repeat for Posts 3 and 4 -->
+    
+            <!-- Post 3 -->
+            <div class="post">
+                <a href="post3.html">
+                    <img src="../images/" alt="Post 3">
+                    <h3>Post 3 Title</h3>
+                </a>
+            </div>
+    
+            <!-- Post 4 -->
+            <div class="post">
+                <a href="post4.html">
+                    <img src="../images/" alt="Post 4">
+                    <h3>Post 4 Title</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/footer.js" defer></script>
+
+    <!-- Smooth scrolling JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll('.post-content section');
+        const sidebarLinks = document.querySelectorAll('.sidebar-section');
+
+        function updateSidebar() {
+            let found = false;
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                if (!found && rect.top <= 100 && rect.bottom >= 100) {
+                    sidebarLinks.forEach(link => link.classList.remove('active'));
+                    sidebarLinks[index].classList.add('active');
+                    found = true;
+                } else {
+                    sidebarLinks[index].classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateSidebar);
+        window.addEventListener('resize', updateSidebar);
+        updateSidebar(); // Initial update
+
+        sidebarLinks.forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

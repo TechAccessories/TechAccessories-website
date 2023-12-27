@@ -1,5 +1,14 @@
-/* Your existing CSS styles for the post page */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+
+}
 .post-section {
     display: flex;
     justify-content: space-between;
@@ -24,23 +33,22 @@
 }
 
 .post-title {
-    width: 100%;
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    margin-top: 50px;
     max-width: 800px;
-    height: auto;
-    font-size: 2em;
-    margin-bottom: 10px;
 }
-.post-image {
-    width: 100%; /* Set the maximum width for the post image */
-    height: auto;
-    margin-bottom: 20px;
-}
+
 
 .product-img{
     width: 100%;
     height: auto;
     margin-bottom: 20px;
     object-fit: cover;
+    box-shadow: 7px 7px 10px rgba(122, 121, 121, 0.3);
+    margin-top: 30px;
     
 }
 
@@ -48,6 +56,7 @@
     line-height: 1.6;
     max-width: 80%; /* Set the maximum width for the post content */
     margin-right: 0; /* Remove the margin on the right side */
+    font-size: 20px;
 }
 
 .section-links {
@@ -58,6 +67,10 @@
     margin-top: 50px;
     width: 100%;
     padding-left: 100px;
+    background-color: rgb(235, 232, 232);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .section-links ul {
@@ -72,7 +85,7 @@
 }
 
 .post-section section {
-    margin-bottom: -70px;
+    margin-top: 50px;
 }
 .post-section h2 {
     margin-bottom: 15px;
@@ -83,17 +96,18 @@
 }
 .post-section p {
     margin-top: 10px;
+    
 }
 .section {
-    margin-left: -170px;
+    
     width: 100%;
 }
 .subsection {
-    margin-left: -140px;
+    margin-left: 50px;
 }
 
 .section-links li {
-    width: 250px; /* Two section links per row with some spacing */
+    width: 500px; /* Two section links per row with some spacing */
     box-sizing: border-box;
     margin-bottom: 10px;
 }
@@ -109,63 +123,165 @@
     
 }
 
+.sidebar {
+    position: sticky;
+    top: 55%;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    transform: translateY(-50%);
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    
+    margin-top: 500px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+    
+}
+
+.sidebar-section {
+    /* Styles for inactive sections */
+    text-decoration: none;
+    padding: 5px;
+}
+.sidebar-section:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.sidebar-section.active {
+    /* Styles for active section */
+    color: #ffa600; /* Change this color to the desired highlight color */
+    font-weight: bold;
+    color: #ffa600;
+}
+
 /* Adjust the hover effect if needed */
 
 
-
-/* Your existing CSS styles for the post page */
-
-.sidebar-block {
-    margin-bottom: 20px;
+.more-posts {
+    margin-top: -120px; /* Adjust as needed */
+    margin-bottom: 50px;
 }
 
-/* New styles for the related posts */
-.related-posts {
-    display: flex;
-    flex-wrap: wrap; /* Allow the related posts to wrap to the next line */
-}
-
-.related-post {
-    width: 300px; /* Two related posts per row with some spacing (300px for one post */
-    box-sizing: border-box;
-    padding: 10px;
+.more-posts h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
     text-align: center;
-    margin-bottom: 15px; /* Add some spacing between related posts */
-    text-align: left;
-    background-color: rgb(236, 231, 231);
-    
+    margin-top: -50px;
 }
 
-.related-post img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add some space between posts */
 }
 
-.related-post-title {
-    font-size: 1em;
-    margin: 0;
-    
-    color: rgb(0, 68, 255); /* Set the initial color of the title */
+.post {
+    width: calc(33.3333% - 90px); /* Calculate the width with space between posts */
+    margin: 0 20px; /* Adjust margin to create space on left and right */
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.post a {
     text-decoration: none; /* Remove default underline */
-    cursor: pointer;
-    transition: color 0.3s, text-decoration 0.3s; /* Add transitions for a smoother effect */
+    color: #333; /* Set link color */
+    transition: color 0.3s, text-decoration 0.3s; /* Add smooth transition */
 }
 
-/* Hover effect for the related post title */
-.related-post-title:hover {
-    color: #007bff; /* Change the color on hover */
-    text-decoration: underline; /* Underline the title on hover */
-}
-.related-post:hover {
-    color: #007bff; /* Change the color on hover */
-    text-decoration: underline; /* Underline the title on hover */
+.post a:hover {
+    text-decoration: unerline; /* Underline on hover */
+    color: #555; /* Change color on hover if needed */
 }
 
-/* Move the sidebar to the left */
-.sidebar {
-    order: -1;
+.post img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 7px 7px 10px rgba(122, 121, 121, 0.3);
 }
 
-/* Add any additional styles as needed */
+.post h3 {
+    margin-top: 10px;
+    font-size: 16px; /* Adjust font size for smaller posts */
+    text-align: center;
+}
 
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .post {
+        width: calc(50% - 20px); /* Two posts per row on smaller screens */
+    }
+    .section {
+    
+        width: 100%;
+    }
+    .subsection {
+        margin-left: 20px;
+    }
+    
+    .section-links li {
+        width: 300px; /* Two section links per row with some spacing */
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .sidebar {
+        display: none;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .post {
+        width: calc(100% - 20px); /* One post per row on even smaller screens */
+    }
+
+    .more-posts h2 {
+        font-size: 24px;
+    }
+
+    .post h3 {
+        font-size: 14px; /* Adjust font size for even smaller screens */
+    }
+    .section {
+    
+        width: 100%;
+    }
+    .subsection {
+        margin-left: 5px;
+    }
+    
+    .section-links li {
+        width: 200px; /* Two section links per row with some spacing */
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+.product-table td {
+    
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+.product-table tr td:first-child {
+    font-weight: bold;
+}

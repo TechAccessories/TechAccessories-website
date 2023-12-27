@@ -1,25 +1,30 @@
-<header>
-    <div class="logo">
-        <a href="../index.html">
-            <img class="logo-image" src="../images/logo.png" alt="Your Logo">
-        </a>
-    </div>
-   
-    
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
     <nav class="header-nav">
-        <!-- Add navigation buttons to different sections of your website -->
-
-        <a href="/index.html">Home</a>
-        <a href="../pages/aboutus.html">About Us</a>
-        <div class="dropdown">
-            <button class="dropbtn">Categories</button>
-            <div class="dropdown-content">
-                <a href="../pages/keyboards-category.html">Keyboards</a>
-                <a href="../pages/mice-category.html">Mice</a>
-                <a href="../pages/laptops-category.html">Laptops</a>
-                <!-- Add more categories as needed -->
-            </div>
-        </div>
-        <a href="../pages/sitemap.html">SiteMap</a>
+        <a href="/index.html"><div class="logo"><img src="../images/logo.png" alt=""></div></a>
+   
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="/index.html">Home</a></li>
+        <li><a href="/pages/aboutus.html">About</a></li>
+        <li><a href="/pages/privacy-policy.html">Privacy</a></li>
+        <li><a href="/pages/sitemap.html">Sitemap</a></li>
+        
+      </ul>
     </nav>
-</header>
+
+
+  </body>
+</html>

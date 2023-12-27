@@ -40,6 +40,8 @@ body {
     display: block; /* Make it a block-level element */
     width: 100%; /* Take up the full width */
     margin-bottom: 10px;
+    margin-top: 20px;
+    
 }
 .link:hover {
     color: #007bff; /* Change the color on hover */
