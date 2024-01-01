@@ -334,10 +334,11 @@ background-color: #ddd; /* Adjust the color as needed */
     flex: 1;
     box-sizing: border-box;
     margin-right: 10px; /* Add margin between columns */
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     transition: text-decoration 0.3s ease-in-out, color 0.1s ease-in-out;
     width: 250px;
+    margin-left: 50px;
     
 }
 
@@ -485,7 +486,8 @@ background-color: #ddd; /* Adjust the color as needed */
     .custom-modified-rows-container {
         flex-direction: column;
         display: inline-block;
-        max-width: 600px;
+        max-width: 400px;
+        margin: 0px;
     }
     #new-section {
         display: block;
@@ -506,7 +508,7 @@ background-color: #ddd; /* Adjust the color as needed */
         
     }
     .custom-modified-column{
-        max-width: 600px;
+        max-width: 700px;
     }
     .custom-modified-rows-container {
         display: flex;
@@ -554,6 +556,7 @@ background-color: #ddd; /* Adjust the color as needed */
 
         
     }
+    
     .left-column {
         text-align: center;
     }
@@ -569,7 +572,10 @@ background-color: #ddd; /* Adjust the color as needed */
     .custom-modified-column{
         max-width: 300px;
     }
-    
+    .row {
+        margin-left: 0cqmin;
+        width: 100%;
+    }
 
     
 }
