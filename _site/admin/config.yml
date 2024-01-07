@@ -4,34 +4,34 @@ backend:
 media_folder: "/_site/images" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  name: "blog"
-  label: "Blog"
-  folder: "/pages"
-  create: true
-  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  fields:
-    - { label: "title", name: "title", widget: "string" }
-    - { label: "introduction", name: "introduction", widget: "string" }
-    - { label: "description", name: "description", widget: "string" }
+  - name: "blog"
+    label: "Blog"
+    folder: "/pages"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "tags", name: "tags", widget: "string" }
+      - { label: "layout", name: "layout", widget: "string" }
+      - { label: "introduction", name: "introduction", widget: "string" }
+      - { label: "description", name: "description", widget: "string" }
 
-    - { label: "sction1title", name: "sction1title", widget: "string" }
-    - { label: "section1image", name: "section1imagealt", widget: "image" }
-    - { label: "sction1description", name: "section1description", widget: "string" }
-    - { label: "sction1description", name: "section1html", widget: "html" }
+      - { label: "section1title", name: "section1title", widget: "string" }
+      - { label: "section1image", name: "section1image", widget: "image" }
+      - { label: "section1description", name: "section1description", widget: "string" }
+      - { label: "section1html", name: "section1html", widget: "string" }
 
-    - { label: "sction2title", name: "sction2title", widget: "string" }
-    - { label: "section2image", name: "section2imagealt", widget: "image" }
-    - { label: "sction2description", name: "section2description", widget: "string" }
-    - { label: "sction2description", name: "section2html", widget: "html" }
+      - { label: "section2title", name: "section2title", widget: "string" }
+      - { label: "section2image", name: "section2image", widget: "image" }
+      - { label: "section2description", name: "section2description", widget: "string" }
+      - { label: "section2html", name: "section2html", widget: "string" }
 
-    - { label: "sction3title", name: "sction3title", widget: "string" }
-    - { label: "section3image", name: "section3imagealt", widget: "image" }
-    - { label: "sction3description", name: "section3description", widget: "string" }
-    - { label: "sction3description", name: "section3html", widget: "html" }
+      - { label: "section3title", name: "section3title", widget: "string" }
+      - { label: "section3image", name: "section3image", widget: "image" }
+      - { label: "section3description", name: "section3description", widget: "string" }
+      - { label: "section3html", name: "section3html", widget: "string" }
 
-    - { label: "sction4title", name: "sction4title", widget: "string" }
-    - { label: "section4image", name: "section4imagealt", widget: "image" }
-    - { label: "sction4description", name: "section4description", widget: "string" }
-    - { label: "sction4description", name: "section4html", widget: "html" }
-
-
+      - { label: "section4title", name: "section4title", widget: "string" }
+      - { label: "section4image", name: "section4image", widget: "image" }
+      - { label: "section4description", name: "section4description", widget: "string" }
+      - { label: "section4html", name: "section4html", widget: "string" }
