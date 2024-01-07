@@ -12,6 +12,7 @@ collections:
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "tags", name: "tags", widget: "string" }
+      - { label: "layout", name: "layout", widget: "string" }
       
       - { label: "introduction", name: "introduction", widget: "string" }
       - { label: "description", name: "description", widget: "string" }
