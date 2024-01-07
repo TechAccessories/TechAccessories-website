@@ -12,7 +12,7 @@ collections:
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "tags", name: "tags", widget: "string" }
-      - { label: "layout", name: "layout", widget: "string" }
+      
       - { label: "introduction", name: "introduction", widget: "string" }
       - { label: "description", name: "description", widget: "string" }
 
@@ -21,17 +21,4 @@ collections:
       - { label: "section1description", name: "section1description", widget: "string" }
       - { label: "section1html", name: "section1html", widget: "string" }
 
-      - { label: "section2title", name: "section2title", widget: "string" }
-      - { label: "section2image", name: "section2image", widget: "image" }
-      - { label: "section2description", name: "section2description", widget: "string" }
-      - { label: "section2html", name: "section2html", widget: "string" }
-
-      - { label: "section3title", name: "section3title", widget: "string" }
-      - { label: "section3image", name: "section3image", widget: "image" }
-      - { label: "section3description", name: "section3description", widget: "string" }
-      - { label: "section3html", name: "section3html", widget: "string" }
-
-      - { label: "section4title", name: "section4title", widget: "string" }
-      - { label: "section4image", name: "section4image", widget: "image" }
-      - { label: "section4description", name: "section4description", widget: "string" }
-      - { label: "section4html", name: "section4html", widget: "string" }
+      
