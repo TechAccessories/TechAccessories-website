@@ -9,29 +9,29 @@ collections:
   folder: "/pages"
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  fields:
-    - { label: "title", name: "title", widget: "string" }
-    - { label: "introduction", name: "introduction", widget: "string" }
-    - { label: "description", name: "description", widget: "string" }
+fields:
+  - { label: "title", name: "title", widget: "string" }
+  - { label: "introduction", name: "introduction", widget: "string" }
+  - { label: "description", name: "description", widget: "string" }
 
-    - { label: "sction1title", name: "sction1title", widget: "string" }
-    - { label: "section1image", name: "section1imagealt", widget: "image" }
-    - { label: "sction1description", name: "section1description", widget: "string" }
-    - { label: "sction1description", name: "section1html", widget: "html" }
+  - { label: "sction1title", name: "sction1title", widget: "string" }
+  - { label: "section1image", name: "section1imagealt", widget: "image" }
+  - { label: "sction1description", name: "section1description", widget: "string" }
+  - { label: "sction1description", name: "section1html", widget: "html" }
 
-    - { label: "sction2title", name: "sction2title", widget: "string" }
-    - { label: "section2image", name: "section2imagealt", widget: "image" }
-    - { label: "sction2description", name: "section2description", widget: "string" }
-    - { label: "sction2description", name: "section2html", widget: "html" }
+  - { label: "sction2title", name: "sction2title", widget: "string" }
+  - { label: "section2image", name: "section2imagealt", widget: "image" }
+  - { label: "sction2description", name: "section2description", widget: "string" }
+  - { label: "sction2description", name: "section2html", widget: "html" }
 
-    - { label: "sction3title", name: "sction3title", widget: "string" }
-    - { label: "section3image", name: "section3imagealt", widget: "image" }
-    - { label: "sction3description", name: "section3description", widget: "string" }
-    - { label: "sction3description", name: "section3html", widget: "html" }
+  - { label: "sction3title", name: "sction3title", widget: "string" }
+  - { label: "section3image", name: "section3imagealt", widget: "image" }
+  - { label: "sction3description", name: "section3description", widget: "string" }
+  - { label: "sction3description", name: "section3html", widget: "html" }
 
-    - { label: "sction4title", name: "sction4title", widget: "string" }
-    - { label: "section4image", name: "section4imagealt", widget: "image" }
-    - { label: "sction4description", name: "section4description", widget: "string" }
-    - { label: "sction4description", name: "section4html", widget: "html" }
+  - { label: "sction4title", name: "sction4title", widget: "string" }
+  - { label: "section4image", name: "section4imagealt", widget: "image" }
+  - { label: "sction4description", name: "section4description", widget: "string" }
+  - { label: "sction4description", name: "section4html", widget: "html" }
 
 
