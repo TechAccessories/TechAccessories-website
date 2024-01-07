@@ -1,0 +1,166 @@
+.footer {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+.list-disclosure-container {
+    display: flex;
+}
+
+.footer-basic {
+    flex-grow: 1; /* Grow to fill remaining space */
+    padding: 40px 20px; /* Adjust padding */
+    background-color: #222222;
+    color: #cacaca;
+    text-align: center;
+}
+.footer-basic .disclosure {
+    max-width: 500px;
+    margin-bottom: 30px;
+   margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 50px;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    line-height: 25px;
+
+}
+
+.footer-basic .footer-title {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    margin-bottom: 50px;
+}
+.footer-basic .footer-title:hover {
+    color: orange;
+    font-size: 1.009em;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin: 0 8px;
+    color: white;
+    opacity: 0.75;
+    transition: background-color 0.3s ease; /* Add transition for background color */
+
+}
+.footer-basic .social > a[href="https://www.pinterest.com/techaccessories483/"]:hover {
+    background-color: red; /* Change to the desired color for Pinterest */
+    border: none;
+}
+
+.footer-basic .social > a[href="https://www.facebook.com/profile.php?id=61555064939683"]:hover {
+    background-color: blue; /* Change to the desired color for Facebook */
+    border: none;
+}
+
+
+.footer-basic .social > a:hover {
+    opacity: 0.9;
+    background-color: inherit;
+}
+
+
+.footer-basic ul.list-inline {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.footer-basic li.list-inline-item {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1220px) {
+    .disclosure {
+        
+        width: 300px;
+    }
+}
+@media (max-width: 1020px) {
+    .list-disclosure-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .disclosure {
+       
+        display: block;
+        margin-left: 300px;
+    }
+    
+    
+}
+@media (max-width: 600px) {
+    .list-disclosure-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .disclosure {
+       
+        display: block;
+        margin-left: 300px;
+    }
+    .footer-basic ul.list-inline {
+        display: block;
+        align-items: center;
+        
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+    
+    .footer-basic li.list-inline-item {
+        display: block;
+        margin-top: 20px;
+    }
+    
+    
+    
+}

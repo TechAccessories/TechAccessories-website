@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icon-logo-1.png"/>
+    <link rel="stylesheet" href="../css/categorypage.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <script src="../js/header.js" defer></script>
+    
+    <title>Your Affiliate Website</title>
+
+    <!-- Add your CSS styles and external stylesheets here -->
+    <style>
+
+    
+    </style>
+</head>
+
+<body>
+
+    <!-- Include the header using JavaScript -->
+    
+
+    <!-- New Section -->
+    <section id="newSection">
+        <h2>Laptop blogs</h2>
+    
+        <div class="container">
+            <!-- Big Block -->
+            <div class="big-block" onclick="location.href='what-is-an-ultra-book.html';">
+                <img src="../images/laptops/Lenovo_ThinkPad_X1_Carbon_Ultrabook.jpg" alt="">
+                <h3>What is an Ultrabook?</h3>
+            </div>
+    
+            <!-- Two Small Blocks -->
+            <div class="small-block" onclick="location.href='what-is-a-chrome-book.html';">
+                <img src="../images/laptops/chromebokk.jpg" alt="">
+                <h4>What is a chromebook</h4>
+            </div>
+    
+            <div class="small-block" onclick="location.href='7-tips-for-choosing-the-right-ultrabook-for-your-portable-computing-needs.html';">
+                <img src="../images/laptops/pexels-life-of-pix-7974.jpg" alt="Laptop">
+                <h4>7 Tips for Choosing the Right Ultrabook for your needs.</h4>
+            </div>
+    
+            <!-- Three Small Blocks -->
+            
+    
+            
+        </div>
+    </section>
+    
+
+    
+
+    <!-- Products and Additional Blocks Section -->
+    <!--
+        
+        <section  id="products">
+        <h2 >Featured Products and Additional Blocks</h2>
+
+        <div class="container">
+            
+            <div class="product-container">
+                
+                <div class="product-block" onclick="location.href='product1.html';">
+                    <h3>Product 1</h3>
+                    <img src="../images/Tower.jpg" alt="Product 1" class="product-image">
+                    <p>Description of Product 1. <a href="your-affiliate-link-1" target="_blank">Learn more</a></p>
+                </div>
+
+                
+                <div class="product-block" onclick="location.href='product2.html';">
+                    <h3>Product 2</h3>
+                    <img src="../Tower.jpg" alt="Product 2" class="product-image">
+                    <p>Description of Product 2. <a href="your-affiliate-link-2" target="_blank">Learn more</a></p>
+                </div>
+                <div class="product-block" onclick="location.href='product1.html';">
+                    <h3>Product 1</h3>
+                    <img src="../images/Tower.jpg" alt="Product 1" class="product-image">
+                    <p>Description of Product 1. <a href="your-affiliate-link-1" target="_blank">Learn more</a></p>
+                </div>
+                <div class="product-block" onclick="location.href='product1.html';">
+                    <h3>Product 1</h3>
+                    <img src="../images/Tower.jpg" alt="Product 1" class="product-image">
+                    <p>Description of Product 1. <a href="your-affiliate-link-1" target="_blank">Learn more</a></p>
+                </div>
+                <div class="product-block" onclick="location.href='product1.html';">
+                    <h3>Product 1</h3>
+                    <img src="../images/Tower.jpg" alt="Product 1" class="product-image">
+                    <p>Description of Product 1. <a href="your-affiliate-link-1" target="_blank">Learn more</a></p>
+                </div>
+                <div class="product-block" onclick="location.href='product1.html';">
+                    <h3>Product 1</h3>
+                    <img src="../images/Tower.jpg" alt="Product 1" class="product-image">
+                    <p>Description of Product 1. <a href="your-affiliate-link-1" target="_blank">Learn more</a></p>
+                </div>
+
+                
+            </div>
+
+            
+        </div>
+    </section>
+-->
+
+    
+    <script>
+        
+        function scrollToProducts() {
+            document.querySelector("#products").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function goToHomePage() {
+            // Replace with the URL of your homepage
+            window.location.href = "web2.html";
+        }
+
+        // Add this script to your existing JavaScript section
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+        function goToSection(sectionId) {
+            // Replace with the appropriate URLs or section IDs
+            window.location.href = sectionId;
+        }
+
+        function toggleDropdown() {
+            // Add logic to toggle the dropdown content
+            var dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('show');
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName('dropdown-content');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="../js/footer.js" defer></script>
+</body>
+
+</html>

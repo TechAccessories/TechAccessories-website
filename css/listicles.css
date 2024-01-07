@@ -1,14 +1,4 @@
-body, h1, h2, h3, p, ul, ol {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-
-}
 .post-section {
     display: flex;
     justify-content: space-between;
@@ -177,6 +167,7 @@ body {
 .more-posts {
     margin-top: -120px; /* Adjust as needed */
     margin-bottom: 100px;
+    display: none;
 }
 
 .more-posts h2 {

@@ -1,0 +1,166 @@
+/* Your existing CSS styles for the post page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+
+}
+.post-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 20px; /* Adjust the margin based on the header height */
+    margin-bottom: 300px;
+}
+
+.post-page {
+    flex-grow: 2;
+    box-sizing: border-box;
+    max-width: 900px; /* Set the maximum width for the post content */
+    margin: 0 auto; /* Center the post content horizontally */
+    
+
+}
+
+
+
+.post-header {
+    text-align: left; /* Align the post header to the left */
+    margin-bottom: 20px;
+}
+
+.post-title {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.post-image {
+    width: 100%; /* Set the maximum width for the post image */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+    
+}
+
+.post-content {
+    line-height: 1.6;
+    max-width: 80%; /* Set the maximum width for the post content */
+    margin-right: 0; /* Remove the margin on the right side */
+}
+.brand-name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-name h2 {
+    /* Add explicit styles for the h2 tag if needed */
+}
+.product {
+    margin-bottom: 40px;
+    margin-top: 80px;
+    
+}
+
+.external-link-button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    margin-bottom: 20px;
+}
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.button-container p {
+    margin: 0; /* Remove default margin for the paragraph element */
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table td {
+    font-weight: bold; /* Make text bold */
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+
+
+/* Your existing CSS styles for the post page */
+
+.more-posts {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.more-posts h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add some space between posts */
+}
+
+.post {
+    width: calc(33.3333% - 90px); /* Calculate the width with space between posts */
+    margin: 0 10px; /* Adjust margin to create space on left and right */
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 7px 7px 10px rgba(122, 121, 121, 0.3);
+}
+
+.post h3 {
+    margin-top: 10px;
+    font-size: 16px; /* Adjust font size for smaller posts */
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .post {
+        width: calc(50% - 20px); /* Two posts per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        width: calc(100% - 20px); /* One post per row on even smaller screens */
+    }
+
+    .more-posts h2 {
+        font-size: 24px;
+    }
+
+    .post h3 {
+        font-size: 14px; /* Adjust font size for even smaller screens */
+    }
+}

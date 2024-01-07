@@ -1,0 +1,284 @@
+
+.post-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 20px; /* Adjust the margin based on the header height */
+    margin-bottom: 300px;
+}
+
+.post-page {
+    flex-grow: 2;
+    box-sizing: border-box;
+    max-width: 900px; /* Set the maximum width for the post content */
+    margin: 0 auto; /* Center the post content horizontally */
+    
+
+}
+
+
+
+.post-header {
+    text-align: left; /* Align the post header to the left */
+    margin-bottom: 20px;
+}
+
+.post-title {
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 800px;
+}
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 7px 7px 10px rgba(122, 121, 121, 0.3);
+    margin-top: 30px;
+    
+}
+
+.post-content {
+    line-height: 1.6;
+    max-width: 80%; /* Set the maximum width for the post content */
+    margin-right: 0; /* Remove the margin on the right side */
+    font-size: 20px;
+}
+
+.section-links {
+    order: -1; /* Move the section links to the left */
+    margin-left: 10px; /* Add margin to the left */
+    display: flex;
+    flex-wrap: wrap; /* Allow the section links to wrap to the next line */
+    margin-top: 50px;
+    width: 100%;
+    padding-left: 100px;
+    background-color: rgb(235, 232, 232);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 80px;
+}
+
+.section-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+
+}
+
+.post-section section {
+    margin-top: 50px;
+}
+.post-section h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.post-section h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.post-section p {
+    margin-top: 10px;
+    
+}
+.section {
+    
+    width: 100%;
+}
+.subsection {
+    margin-left: 50px;
+}
+
+.section-links li {
+    width: 500px; /* Two section links per row with some spacing */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.section-links a {
+    text-decoration: underline;
+    color: rgb(0, 87, 250);
+    display: block; /* Make the link a block element to fill the li */
+    padding: 5px; /* Add padding for better spacing */
+    text-align: left; /* Align the text to the left */
+    margin-top: -10px;
+    width: 100%;
+    
+}
+
+.sidebar {
+    position: sticky;
+    top: 55%;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    transform: translateY(-50%);
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    
+    margin-top: 500px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+    
+}
+
+.sidebar-section {
+    /* Styles for inactive sections */
+    text-decoration: none;
+    padding: 5px;
+}
+.sidebar-section:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.sidebar-section.active {
+    /* Styles for active section */
+    color: #ffa600; /* Change this color to the desired highlight color */
+    font-weight: bold;
+    color: #ffa600;
+}
+
+/* Adjust the hover effect if needed */
+
+
+.more-posts {
+    margin-top: -120px; /* Adjust as needed */
+    margin-bottom: 100px;
+    display: none;
+}
+
+.more-posts h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add some space between posts */
+}
+
+.post {
+    width: calc(33.3333% - 90px); /* Calculate the width with space between posts */
+    margin: 0 20px; /* Adjust margin to create space on left and right */
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.post a {
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Set link color */
+    transition: color 0.3s, text-decoration 0.3s; /* Add smooth transition */
+}
+
+.post a:hover {
+    text-decoration: unerline; /* Underline on hover */
+    color: #555; /* Change color on hover if needed */
+}
+
+.post img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 7px 7px 10px rgba(122, 121, 121, 0.3);
+}
+
+.post h3 {
+    margin-top: 10px;
+    font-size: 16px; /* Adjust font size for smaller posts */
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .post {
+        width: calc(50% - 20px); /* Two posts per row on smaller screens */
+    }
+    .section {
+    
+        width: 100%;
+    }
+    .subsection {
+        margin-left: 20px;
+    }
+    
+    .section-links li {
+        width: 300px; /* Two section links per row with some spacing */
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .sidebar {
+        display: none;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .post {
+        width: calc(100% - 20px); /* One post per row on even smaller screens */
+    }
+
+    .more-posts h2 {
+        font-size: 24px;
+    }
+
+    .post h3 {
+        font-size: 14px; /* Adjust font size for even smaller screens */
+    }
+    .section {
+    
+        width: 100%;
+    }
+    .subsection {
+        margin-left: 5px;
+    }
+    
+    .section-links li {
+        width: 200px; /* Two section links per row with some spacing */
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+.product-table td {
+    
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+.product-table tr td:first-child {
+    font-weight: bold;
+}
