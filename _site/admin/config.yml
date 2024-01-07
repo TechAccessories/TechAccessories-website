@@ -17,9 +17,9 @@ collections:
       - { label: "introduction", name: "introduction", widget: "string" }
       - { label: "description", name: "description", widget: "string" }
 
-      - { label: "section1title", name: "section1title", widget: "string" }
-      - { label: "section1image", name: "section1image", widget: "image" }
-      - { label: "section1description", name: "section1description", widget: "string" }
-      - { label: "section1html", name: "section1html", widget: "string" }
+      - { label: "section1title", name: "section1title", widget: "string", required: false }
+      - { label: "section1image", name: "section1image", widget: "image", required: false }
+      - { label: "section1description", name: "section1description", widget: "string", required: false }
+      - { label: "section1html", name: "section1html", widget: "string", required: false }
 
       
