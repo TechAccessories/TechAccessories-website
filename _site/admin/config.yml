@@ -12,6 +12,7 @@ collections:
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "tags", name: "tags", widget: "string" }
+      - { label: "image", name: "image", widget: "image" }
       - { label: "layout", name: "layout", widget: "string" }
       
       - { label: "introduction", name: "introduction", widget: "string" }
@@ -19,7 +20,7 @@ collections:
 
       - { label: "section1title", name: "section1title", widget: "string", required: false }
       - { label: "section1image", name: "section1image", widget: "image", required: false }
-      - { label: "section1description", name: "section1description", widget: "string", required: false }
+      - { label: "section1description", name: "section1description", widget: "markdown", required: false }
       - { label: "section1html", name: "section1html", widget: "string", required: false }
 
       
