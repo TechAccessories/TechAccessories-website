@@ -9,13 +9,17 @@
 .post-page {
     flex-grow: 2;
     box-sizing: border-box;
-    max-width: 900px; /* Set the maximum width for the post content */
+    max-width: 80%; /* Set the maximum width for the post content */
     margin: 0 auto; /* Center the post content horizontally */
     
 
 }
 
+.a-link {
+    color: #007bff;
+    text-decoration: underline;
 
+}
 
 .post-header {
     text-align: left; /* Align the post header to the left */
@@ -28,7 +32,7 @@
     font-weight: 800;
     margin-bottom: 50px;
     margin-top: 50px;
-    max-width: 800px;
+    max-width: 100%;
 }
 .post-image {
     width: 100%;
@@ -38,8 +42,8 @@
 
 
 .product-img{
-    width: 100%;
-    height: auto;
+    width: 70%;
+    height: 500px;
     margin-bottom: 20px;
     object-fit: cover;
     box-shadow: 7px 7px 10px rgba(122, 121, 121, 0.3);
@@ -240,6 +244,22 @@
 }
 
 @media (max-width: 480px) {
+    .post-page {
+
+        max-width: 100%; /* Set the maximum width for the post content */
+
+        
+    
+    }
+    
+   
+    
+    .post-content {
+        
+        max-width: 100%; /* Set the maximum width for the post content */
+        
+    }
+    
     .post {
         width: calc(100% - 20px); /* One post per row on even smaller screens */
     }
@@ -260,7 +280,7 @@
     }
     
     .section-links li {
-        width: 200px; /* Two section links per row with some spacing */
+        width: 100%; /* Two section links per row with some spacing */
         box-sizing: border-box;
         margin-bottom: 30px;
     }

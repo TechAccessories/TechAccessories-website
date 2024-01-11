@@ -11,16 +11,45 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "title", name: "title", widget: "string" }
-      - { label: "tags", name: "tags", widget: "string" }
+      - { label: "tags", name: "tags", widget: "list" }
       - { label: "image", name: "image", widget: "image" }
       - { label: "layout", name: "layout", widget: "string" }
       
       - { label: "introduction", name: "introduction", widget: "string" }
-      - { label: "description", name: "description", widget: "string" }
+      - { label: "Meta Tag description", name: "description", widget: "string" }
 
-      - { label: "section1title", name: "section1title", widget: "string", required: false }
-      - { label: "section1image", name: "section1image", widget: "image", required: false }
-      - { label: "section1description", name: "section1description", widget: "markdown", required: false }
-      - { label: "section1html", name: "section1html", widget: "string", required: false }
+      - { label: "section1 Title", name: "section1title", widget: "markdown", required: false }
+      - { label: "section1 image", name: "section1image", widget: "image", required: false }
+      - { label: "section1 description", name: "section1description", widget: "markdown", required: false }
+
+      - { label: "section2 title", name: "section2title", widget: "markdown", required: false }
+      - { label: "section2 image", name: "section2image", widget: "image", required: false }
+      - { label: "section2 description", name: "section2description", widget: "markdown", required: false }
+
+      - { label: "section3 title", name: "section3title", widget: "markdown", required: false }
+      - { label: "section3 image", name: "section3image", widget: "image", required: false }
+      - { label: "section3 description", name: "section3description", widget: "markdown", required: false }
+
+      - { label: "section4 title", name: "section4title", widget: "markdown", required: false }
+      - { label: "section4 image", name: "section4image", widget: "image", required: false }
+      - { label: "section4 description", name: "section4description", widget: "markdown", required: false }
+
+      - { label: "section5 title", name: "section5title", widget: "markdown", required: false }
+      - { label: "section5 image", name: "section5image", widget: "image", required: false }
+      - { label: "section5 description", name: "section5description", widget: "markdown", required: false }
+
+      - { label: "section6 title", name: "section6title", widget: "markdown", required: false }
+      - { label: "section6 image", name: "section6image", widget: "image", required: false }
+      - { label: "section6 description", name: "section6description", widget: "markdown", required: false }
+
+      - { label: "section7 title", name: "section7title", widget: "markdown", required: false }
+      - { label: "section7 image", name: "section7image", widget: "image", required: false }
+      - { label: "section7 description", name: "section7description", widget: "markdown", required: false }
+      - { label: "section8 title", name: "section8title", widget: "markdown", required: false }
+      - { label: "section8 image", name: "section8image", widget: "image", required: false }
+      - { label: "section8 description", name: "section8description", widget: "markdown", required: false }
+
+      
+
 
       

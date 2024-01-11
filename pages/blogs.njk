@@ -6,20 +6,23 @@ layout: 'base.njk'
 
     
   <div class="category-container">
-    
+        <h1 style="color: black;margin-bottom:30px;">Featured Blogs</h1>
         <div class="category-top-section">
-            {%-for post in collections.top-%}
-                <a href="{{post.url}}">
-                    <div class="left-side">
-                        
-                            <img  src="{{post.data.image}}" alt="">
-                            <h3>{{post.data.category}}</h3>
-                            <h2>{{post.data.title}}</h2>
+            {%- for post in collections.top -%}
+                
+                {%- if loop.index <= 1 -%}
+                    <a href="{{post.url}}">
+                        <div class="left-side">
+                            
+                                <img  src="{{post.data.image}}" alt="">
+                                <h3>{{post.data.category}}</h3>
+                                <h2>{{post.data.title}}</h2>
+                                
                             
                         
-                    
-                    </div>
-                </a>
+                        </div>
+                    </a>
+                {%-endif-%}
             {%endfor%}
             <div class="right-side">
                 {%-for post in collections.featured-%}
@@ -43,9 +46,9 @@ layout: 'base.njk'
                 
             </div>
         </div>
-        
+        <h1 style="color:black;margin: 30px 0px 30px;">Latest Blogs</h1>
     <div class="blogs-container">
-        {%- for post in collections.post -%}
+        {%- for post in collections.post | reverse -%}
             <a href="{{ post.url }}">
                 <div class="blog-post">
                     <img src="{{ post.data.image }}" alt="">

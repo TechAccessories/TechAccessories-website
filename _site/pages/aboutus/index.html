@@ -1,8 +1,57 @@
 
----
-layout: 'base.njk'
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    
+    <meta name="p:domain_verify" content="3d95a5576db3712667e5bf614b8f54b9"/>
+    <link rel="stylesheet" href="/css/index.css">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="/css/listicles.css">
+    
+    <link rel="icon" type="image/png" href="/images/icon-logo-1.png"/>
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="/css/privacypolicy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
 <body>
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav class="header-nav">
+        <a href="/index.html"><div class="logo"><img src="/images/logo.png" alt=""></div></a>
+   
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="/index">Home</a></li>
+        <li><a href="/pages/aboutus">About</a></li>
+        <li><a href="/pages/privacy-policy">Privacy</a></li>
+        <li><a href="/pages/blogs">Blogs</a></li>
+        
+      </ul>
+    </nav>
+
+
+  </body>
+</html>
+    
     <div class="sitemap">
     <h2 class="sitemap-title" style="margin-bottom: 70px;">About Us</h2>
     
@@ -35,7 +84,67 @@ layout: 'base.njk'
         <h2>Contact Us</h2>
         <p>We value your feedback and engagement. Feel free to reach out to us via email at youssefbusiness035@gmail.com for inquiries, suggestions, or collaborations.</p>
     </div>
-    <script src="../js/footer.js" defer></script>
+
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/footer/footer.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Add other meta tags and stylesheets here if needed -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add other meta tags and stylesheets here if needed -->
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                
+                
+                <a target="_blank" href="https://www.pinterest.com/techaccessories483/"><i class="icon ion-social-pinterest"></i></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61555064939683"><i class="icon ion-social-facebook"></i></a>
+            </div> 
+            <h1> <a class="footer-title" href="/index.html">TechAccessories.blog</a></h1>
+            <div class="list-disclosure-container">
+                <p class="disclosure">Disclosure: This website contains affiliate links, which means we may earn a small commission from products or services mentioned or recommended through our site. Your support helps keep this site running and allows us to continue providing valuable content. Thank you for your support!</p>
+                <ul class="list-inline">
+                    
+                    
+                    <li class="list-inline-item"><a href="/pages/blogs">Blogs</a></li>
+                    <li class="list-inline-item"><a href="/pages/disclaimer">Disclaimer</a></li>
+                    <li class="list-inline-item"><a href="/pages/aboutus">About</a></li>
+                    <li class="list-inline-item"><a href="/pages/terms-and-conditions">Terms and conditions</a></li>
+                    <li class="list-inline-item"><a href="/pages/privacy-policy">Privacy Policy</a></li>
+                    
+                </ul>
+            </div>
+            
+            
+            <p class="copyright">Tech Accessories © 2023</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
 </body>
+</html>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+    </script>
+</body> 
 </html>

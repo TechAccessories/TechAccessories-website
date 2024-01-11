@@ -1,5 +1,5 @@
 ---
- 
+ title: Home
  layout: 'base.njk'
 ---
 <!--<!DOCTYPE html>
@@ -42,74 +42,47 @@
     </section>
 
     
-    <h2 style="text-align: center; margin-top: 50px;  font-size: 50px;">Blogs</h2>
-    <!-- New Section -->
+    
+    <h2 style="text-align: left; margin-top: 50px;  font-size: 50px; margin-left: 50px">Latest Blogs</h2>
     <section id="new-section" class="container">
-        <!-- First Column -->
-        <div class="column">
-            <div class="left-column">
-                <a href="pages/what-is-a-chrome-book.html">
-                    <img src="images/laptops/chrome-book-image-ai.jpg" alt="Image Description">
-                    <h2>Chrombooks : Laptops Powered by Chrome OS</h2>
-                </a>
-                <p>Discover the features and functionality of chromebooks</p>
-            </div>
-        </div>
+        
+        {%-for post in collections.post | reverse-%}
+            {%- if loop.index <= 1 -%}
+                <div class="column">
+                    <div class="left-column">
+                        <a href="{{post.url}}">
+                            <img src="{{post.data.image}}" alt="">
+                            <h2>{{post.data.title}}</h2>
+                        </a>
+                        
+                    </div>
+                </div>
+            {%- endif -%}
+        {%endfor%}
 
-        <!-- Second Column -->
+        
         <div class="column">
             <!-- First Row -->
-            <div class="row" >
-                <a href="pages/what-is-an-optical-mouse.html">
-                    <div class="text-content">
-                        
-                        <div class="small-image" >
-                            <img src="images/mice/optical-mouse-photo-light.jpg" alt="Small Image 1">
-                        </div>
-                        <div class="title-and-description">
-                            <h3>What is an optical mouse?</h3>
-                            
-                            
-                        </div>
-                        
+            
+            {%- for post in collections.post -%}
+                {%- if loop.index <= 3 -%}
+                    <div class="row">
+                        <a href="{{ post.url }}">
+                            <div class="text-content">
+                                <div class="small-image">
+                                    <img src="{{ post.data.image }}" alt="Small Image 1">
+                                </div>
+                                <div class="title-and-description">
+                                    <h3>{{ post.data.title }}</h3>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
+                {%- endif -%}
+            {%- endfor -%}
+
         
-            <!-- Second Row -->
-            <div class="row">
-                <a href="pages/what-is-an-ultra-book.html">
-                    <div class="text-content">
-                        
-                        <div class="small-image">
-                            <img src="images/laptops/ultrabook-image-generated.jpg" alt="Small Image 1">
-                        </div>
-                        <div class="title-and-description">
-                            <h3>Ultrabook Laptop : Features and Advantages</h3>
-                            
-                        </div>
-                        
-                    </div>
-                </a>
-            </div>
-        
-        
-            <!-- Third Row -->
-            <div class="row">
-                <a href="pages/what-is-a-gaming-keyboard.html">
-                    <div class="text-content">
-                        
-                        <div class="small-image">
-                            <img src="images/keyboards/KL610_gaming_keyboard.jpg" alt="Small Image 1">
-                        </div>
-                        <div class="title-and-description">
-                            <h3>Gaming Keyboards: Features and Advantages</h3>
-                            
-                        </div>
-                        
-                    </div>
-                </a>
-            </div>
+            
         
         </div>
     </section>
@@ -121,42 +94,27 @@
         <div class="custom-column">
             <!-- First Row -->
             <div class="custom-row">
-                <h2 style="font-size: 35px; color: orangered;"></h2>
+                <h2 style="font-size: 35px; ">Software & Apps</h2>
                 
             </div>
             <!-- Second Row -->
             <div class="custom-row background-row">
                 <!-- Clickable Columns -->
-                <a href="pages/what-is-a-trackball-mouse.html" class="custom-clickable-column">
-                    <!-- Left Column - Image -->
-                    <div class="custom-image-row">
-                        <img src="images/mice/mouse (1).jpg" alt="Image 1">
-                    </div>
-                    <!-- Right Column - Title -->
-                    <div class="custom-title-row">
-                        <h3>Trackball Mouse: Precision and Advantages. </h3>
-                    </div>
-                </a>
-                <a href="pages/what-is-an-ergonomic-mouse.html" class="custom-clickable-column">
-                    <!-- Left Column - Image -->
-                    <div class="custom-image-row">
-                        <img src="images/mice/ergonomic-mouse-image.jpg" alt="Image 1">
-                    </div>
-                    <!-- Right Column - Title -->
-                    <div class="custom-title-row">
-                        <h3>What is an ergonomic Mouse?</h3>
-                    </div>
-                </a>
-                <a href="pages/what-is-a-mechanical-keyboard.html" class="custom-clickable-column">
-                    <!-- Left Column - Image -->
-                    <div class="custom-image-row">
-                        <img src="images/keyboards/2018_Bay_Area_Mechanical_Keyboard_Meetup_(45946731021).jpg" alt="Image 1">
-                    </div>
-                    <!-- Right Column - Title -->
-                    <div class="custom-title-row">
-                        <h3>Mechanical Keyboard : Construction, Switches, and Advantages</h3>
-                    </div>
-                </a>
+                {%- for post in collections.apps -%}
+                    {%- if loop.index <= 5 -%}
+                        <a href="{{post.url}}" class="custom-clickable-column">
+                            <!-- Left Column - Image -->
+                            <div class="custom-image-row">
+                                <img src="{{post.data.image}}" alt="Image 1">
+                            </div>
+                            <!-- Right Column - Title -->
+                            <div class="custom-title-row">
+                                <h3>{{ post.data.title }}</h3>
+                            </div>
+                        </a>
+                    {%- endif -%}
+                {%- endfor -%}
+
                 
                 <!-- Repeat similar structure for other columns -->
             </div>
@@ -164,45 +122,23 @@
 
         <!-- Second Column -->
         <div class="custom-modified-column">
-            <h2 style="font-size: 35px; color: orangered;"></h2>
+            <h2 style="font-size: 35px; margin-left: 80px;">Tips & Guides</h2>
             <!-- Modified Structure with Rows and Blocks -->
             <div class="custom-modified-rows-container">
                 <!-- First Row -->
                 <div class="custom-modified-row">
-                    <a href="6-best-fitness-tracking-apps.html">
-                        <div class="custom-modified-column-with-margin">
-                            <img src="images/how-to-images/fitness-apps/onur-binay-8OQt1zTnJeE-unsplash.jpg" alt="Image 2-1">
-                            
-                                <h3>6 Best Fitness Tracking Apps for iPhone</h3>
-                            
-                        </div>
-                    </a>
-                    <a href="pages/7-ways-to-improve-your-typing-speed-and-accuracy-on-a-keyboard" class="custom-modified-column-with-margin-a">
-                        <div class="custom-modified-column-with-margin">
-                            <img src="images/keyboards/keyboard-typing_PJLZHLI1XL.jpg" alt="Image 2-1">
-                            
-                                <h3>7 Tips to Improve Your Typing Speed and Accuracy on a Keyboard</h3>
-                            
-                        </div>
-                    </a>
-                </div>
-                <div class="custom-modified-row">
-                    <a href="pages/16-tools-to-increase-your-productivity.html">
-                        <div class="custom-modified-column-with-margin">
-                            <img src="images/how-to-images/productivity-tools/apps-random.jpg" alt="Image 2-1">
-                            
-                                <h3>16 Best Free Productivity Tools in 2023 to Make your Work Faster</h3>
-                            
-                        </div>
-                    </a>
-                    <a href="pages/how-to-publish-a-website.html" class="custom-modified-column-with-margin-a">
-                        <div class="custom-modified-column-with-margin">
-                            <img src="images/laptops/random-laptop-image.jpg" alt="Image 2-1">
-                            
-                                <h3>How to Publish a website onto the internet</h3>
-                            
-                        </div>
-                    </a>
+                    {%- for post in collections.tips -%}
+                        {%- if loop.index <= 6 -%}
+                            <a href="{{post.url}}">
+                                <div class="custom-modified-column-with-margin">
+                                    <img src="{{post.data.image}}" alt="Image 2-1">
+                                    
+                                        <h3>{{ post.data.title }}</h3>
+                                    
+                                </div>
+                            </a>
+                        {%- endif -%}
+                    {%- endfor -%}
                 </div>
                 <!-- Add more rows as needed -->
                 
