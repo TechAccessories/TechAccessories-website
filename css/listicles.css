@@ -16,9 +16,10 @@
 }
 
 .a-link {
-    color: #007bff;
-    text-decoration: underline;
-
+    font-size: 35px;
+    color: rgb(0, 89, 255); 
+    text-decoration: underline; 
+    display: inline-block;
 }
 
 .post-header {
@@ -38,7 +39,16 @@
     width: 100%;
     height: auto;
 }
+img{
 
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 7px 7px 10px rgba(122, 121, 121, 0.3);
+    margin-top: 30px;
+
+}
 
 
 .product-img{
